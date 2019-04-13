@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #393e46;
+}
+
+h1 {
+  color: white;
+}
+
+.top {
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  padding: 1.5%;
+  background-color: black;
+  font-family: "Fredoka One", cursive;
+  font-size: 180%;
+}
+
+.btn {
+  color: white;
+  background-color: #6b8c42;
+  border-color: black;
+  font-size: 30px;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  width: 30%;
+  height: 10vh;
+}
+
+.sounds {
+  margin-left: 10%;
+  margin-top: 13%;
+}
+
+.up {
+  margin-bottom: 2%;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+}
+
+/*.btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}*/
