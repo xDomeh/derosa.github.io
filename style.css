@@ -47,8 +47,8 @@ h1 {
   box-shadow: 0 3px 4px 0 #dbedf3;
 }
 
-/*.btn:hover {
+.btn:hover {
   background-color: white;
   color: black;
   cursor: pointer;
-}*/
+}
