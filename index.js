@@ -17,3 +17,8 @@ document.querySelectorAll(".btn")[3].addEventListener("click", function() {
   var sound = new Audio("sounds/51.mp3");
   sound.play();
 });
+
+document.querySelectorAll(".btn")[5].addEventListener("click", function() {
+  var sound = new Audio("sounds/dai.mp3");
+  sound.play();
+});
