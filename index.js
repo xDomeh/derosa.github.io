@@ -1,4 +1,19 @@
-document.querySelectorAll('.btn')[0].addEventListener('click', function() {
+function playSound() {
+    audioLoader.load("sounds/dai.mp3", function(buffer) {
+        sound.setBuffer( buffer );
+        sound.setRefDistance( 20 );
+        sound.play();
+    });
+
+    var source = listener.context.createBufferSource();
+    source.connect(listener.context.destination);
+    source.start();
+}
+
+window.addEventListener('touchstart', playSound);
+document.addEventListener('click', playSound);
+
+/*document.querySelectorAll('.btn')[0].addEventListener('click', function() {
 	var sound = new Audio('sounds/si.mp3');
 	sound.play();
 });
@@ -23,42 +38,8 @@ document.querySelectorAll('.btn')[5].addEventListener('click', function() {
 	sound.play();
 });
 
-/*document.querySelectorAll('.btn')[0].addEventListener('click', function initAudio() {
-	var audio = new Audio('.sounds/si.mp3');
-	var self = this;
-	self.audio = audio;
-	var startAudio = function() {
-		self.audio.play();
-		document.removeEventListener('touchstart', self.startAudio, false);
-	};
-	self.startAudio = startAudio;
-
-	var pauseAudio = function() {
-		self.audio.pause();
-		self.audio.removeEventListener('play', self.pauseAudio, false);
-	};
-	self.pauseAudio = pauseAudio;
-
-	document.addEventListener('touchstart', self.startAudio, false);
-	self.audio.addEventListener('play', self.pauseAudio, false);
+document.querySelectorAll('.btn')[0].addEventListener('click', function() {
+	var sound = new Audio('sounds/si.mp3');
+	sound.play();
 });
-
-document.querySelectorAll('.btn')[1].addEventListener('click', function initAudio() {
-	var audio = new Audio('.sounds/si.mp3');
-	var self = this;
-	self.audio = audio;
-	var startAudio = function() {
-		self.audio.play();
-		document.removeEventListener('touchstart', self.startAudio, false);
-	};
-	self.startAudio = startAudio;
-
-	var pauseAudio = function() {
-		self.audio.pause();
-		self.audio.removeEventListener('play', self.pauseAudio, false);
-	};
-	self.pauseAudio = pauseAudio;
-
-	document.addEventListener('touchstart', self.startAudio, false);
-	self.audio.addEventListener('play', self.pauseAudio, false);
-});*/
+*/
