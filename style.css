@@ -1,89 +1,118 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  height: 100vh;
-  background-color: #393e46;
+	height: 100vh;
+	background-color: #393e46;
 }
 
 h1 {
-  color: white;
+	color: white;
 }
 
 .top {
-  height: 15%;
-  width: 100%;
-  text-align: center;
-  padding: 1.5%;
-  background-color: black;
-  font-family: "Fredoka One", cursive;
-  font-size: 180%;
+	height: 15%;
+	width: 100%;
+	text-align: center;
+	padding: 1.5%;
+	background-color: black;
+	font-family: "Fredoka One", cursive;
+	font-size: 180%;
 }
 
 .btn {
-  color: white;
-  background-color: #6b8c42;
-  border-color: black;
-  font-size: 30px;
-  padding: 10px 10px 10px 10px;
-  font-weight: bold;
-  width: 30%;
-  height: 10vh;
+	color: white;
+	background-color: #6b8c42;
+	border-color: black;
+	font-size: 30px;
+	padding: 10px 10px 10px 10px;
+	font-weight: bold;
+	width: 30%;
+	height: 10vh;
 }
 
 .sounds {
-  margin-left: 10%;
-  margin-top: 13%;
+	margin-left: 10%;
+	margin-top: 13%;
 }
 
 .up {
-  margin-bottom: 2%;
+	margin-bottom: 2%;
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #dbedf3;
+	box-shadow: 0 3px 4px 0 #dbedf3;
 }
 
 .btn:hover {
-  background-color: white;
-  color: black;
-  cursor: pointer;
+	background-color: white;
+	color: black;
+	cursor: pointer;
 }
 
+/*Iphone 6/6s/7/8*/
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .top {
-    height: 10%;
-    width: 100%;
-    background-color: black;
-    font-family: "Fredoka One", cursive;
-    font-size: 60%;
-    padding-right: 23%;
-    padding-top: 5.5%;
-  }
+	.top {
+		height: 10%;
+		width: 100%;
+		background-color: black;
+		font-family: "Fredoka One", cursive;
+		font-size: 60%;
+		padding-right: 23%;
+		padding-top: 5.5%;
+	}
 
-  .btn {
-    color: white;
-    background-color: #6b8c42;
-    border-color: black;
-    font-size: 10px;
-    padding: 10px 10px 10px 10px;
-    font-weight: bold;
-    width: 15%;
-    height: 9vh;
-  }
+	.btn {
+		color: white;
+		background-color: #6b8c42;
+		border-color: black;
+		font-size: 10px;
+		padding: 10px 10px 10px 10px;
+		font-weight: bold;
+		width: 15%;
+		height: 9vh;
+	}
 
-  .up {
-    position: relative;
-    left: 30px;
-    top: 70px;
-  }
+	.up {
+		position: relative;
+		left: 30px;
+		top: 70px;
+	}
 
-  .down {
-    position: relative;
-    right: 133.5px;
-    top: 20vh;
-  }
+	.down {
+		position: relative;
+		right: 133.5px;
+		top: 20vh;
+	}
+}
+
+/*Most of Smarthphones*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.top {
+		height: 25%;
+		width: 100%;
+		background-color: black;
+		font-family: "Fredoka One", cursive;
+		font-size: 20px;
+	}
+
+	.btn {
+		color: white;
+		background-color: #6b8c42;
+		border-color: black;
+		font-size: 18px;
+		font-weight: bold;
+		width: 40%;
+		height: 15vh;
+	}
+
+	.sounds {
+		margin-left: 50px;
+		margin-top: 50px;
+	}
 }
