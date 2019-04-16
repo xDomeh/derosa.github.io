@@ -27,3 +27,18 @@ document.querySelectorAll('.btn')[5].addEventListener('click', function() {
 	var sound = new Audio('sounds/dai.mp3');
 	sound.play();
 });
+
+document.querySelectorAll('.btn')[6].addEventListener('click', function() {
+	var sound = new Audio('sounds/schizza.mp3');
+	sound.play();
+});
+
+document.querySelectorAll('.btn')[7].addEventListener('click', function() {
+	var sound = new Audio('sounds/palle.mp3');
+	sound.play();
+});
+
+document.querySelectorAll('.btn')[8].addEventListener('click', function() {
+	var sound = new Audio('sounds/sas.mp3');
+	sound.play();
+});
