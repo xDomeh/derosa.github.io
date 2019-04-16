@@ -1,19 +1,4 @@
-function playSound() {
-    audioLoader.load("sounds/dai.mp3", function(buffer) {
-        sound.setBuffer( buffer );
-        sound.setRefDistance( 20 );
-        sound.play();
-    });
-
-    var source = listener.context.createBufferSource();
-    source.connect(listener.context.destination);
-    source.start();
-}
-
-window.addEventListener('touchstart', playSound);
-document.addEventListener('click', playSound);
-
-/*document.querySelectorAll('.btn')[0].addEventListener('click', function() {
+document.querySelectorAll('.btn')[0].addEventListener('click', function() {
 	var sound = new Audio('sounds/si.mp3');
 	sound.play();
 });
@@ -33,13 +18,12 @@ document.querySelectorAll('.btn')[3].addEventListener('click', function() {
 	sound.play();
 });
 
+document.querySelectorAll('.btn')[4].addEventListener('click', function() {
+	var sound = new Audio('sounds/cazzo.mp3');
+	sound.play();
+});
+
 document.querySelectorAll('.btn')[5].addEventListener('click', function() {
 	var sound = new Audio('sounds/dai.mp3');
 	sound.play();
 });
-
-document.querySelectorAll('.btn')[0].addEventListener('click', function() {
-	var sound = new Audio('sounds/si.mp3');
-	sound.play();
-});
-*/
