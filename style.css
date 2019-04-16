@@ -56,6 +56,10 @@ h1 {
 /*Most of Smarthphones*/
 
 @media (min-width: 320px) and (max-width: 480px) {
+	body {
+		height: 140vh;
+	}
+	
 	.top {
 		height: 25%;
 		width: 100%;
